@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carmechs</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img
+          src="freepik__adjust__75437-removebg-preview.png"
+          alt="Carmechs Logo"
+          class="nav-logo"
+        />
+        Carmechs
+      </div>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#partners">Partner</a>
+        <a href="#gebrauchtwagen">Gebrauchtwagen</a>
+        <a href="#neuwagen">Neuwagen</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <h1>Willkommen bei Carmechs</h1>
+        <button>Jetzt Kontakt aufnehmen</button>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Unsere Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Ölwechsel</h3>
+          <p>Wir bieten professionelle Ölwechselservices an.</p>
+        </div>
+        <div class="card">
+          <h3>Bremsenreparatur</h3>
+          <p>Sicherheit ist unser oberstes Gebot. Vertrauen Sie uns.</p>
+        </div>
+        <div class="card">
+          <h3>Motorwartung</h3>
+          <p>Unser Team kümmert sich um Ihren Motor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="section logo-section">
+      <h2>Unsere Partner</h2>
+      <div>
+        <img src="https://via.placeholder.com/150x50" alt="Partner 1" />
+        <img src="https://via.placeholder.com/150x50" alt="Partner 2" />
+        <img src="https://via.placeholder.com/150x50" alt="Partner 3" />
+      </div>
+    </section>
+
+    <section id="gebrauchtwagen" class="section">
+      <h2>Gebrauchtfahrzeuge</h2>
+      <form>
+        <label for="category">Kategorie wählen:</label>
+        <select id="category">
+          <option value="cars">Gebrauchtwagen</option>
+          <option value="bikes">Gebrauchtmotorräder</option>
+        </select>
+      </form>
+    </section>
+
+    <section id="neuwagen" class="section">
+      <h2>Neuwagen bestellen</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="E-Mail" required />
+        <input type="tel" placeholder="Telefonnummer" required />
+        <input type="text" placeholder="Adresse" required />
+
+        <label for="brand">Automarke:</label>
+        <select id="brand">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="mercedes">Mercedes</option>
+        </select>
+
+        <label for="doors">Türen:</label>
+        <select id="doors">
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <label for="color">Farbe:</label>
+        <input type="color" id="color" />
+
+        <label for="month">Liefermonat:</label>
+        <input type="month" id="month" />
+
+        <div>
+          <label
+            ><input
+              type="radio"
+              name="fuel"
+              value="benziner"
+              required
+            />Benziner</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="fuel"
+              value="e-version"
+            />E-Version</label
+          >
+        </div>
+
+        <textarea placeholder="Weitere Wünsche" rows="4"></textarea>
+
+        <label> <input type="checkbox" required /> AGBs akzeptieren </label>
+
+        <input type="text" value="Nicht editierbar" disabled />
+
+        <button type="submit">Bestellung abschicken</button>
+      </form>
+    </section>
+  </body>
+</html>
